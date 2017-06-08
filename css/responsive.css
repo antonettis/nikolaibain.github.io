@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Mobile */
+@media (max-width: 400px) {
+
+}
+
+/* Small Tablets */
+@media (min-width: 401px)and (max-width: 869px) {
+
+}
+
+/* Small Desktops */
+@media (min-width: 870px) and (max-width: 1200px) {
+
+}
+
+/* Large Desktops */
+@media (min-width: 1200px) {
+	
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Identity Design</title>
+    <link href="css/style2.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive2.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:400,600" rel="stylesheet">
+    <script src="js/modernizr-custom.js"></script>
+</head>
+
+<!-- Body Starts -->
+<body>
+	<div class="container"> 
+    
+<!-- Navigation -->
+<header class="nav">
+  <div class="logo"> <a href="index.html"> <img src="images/logo.png" width="150" height="54" alt="logo"/> </a></div>
+	<input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="contact.html">Contact.</a></li>
+            <li><a href="projects.html">Projects.</a></li>
+            <li><a href="about.html">About.</a></li>
+        </ul>
+</header>
+
+<!-- Header -->
+  <section class="header" id="header">
+    <h1>Projects.</h1>
+  </section>
+  <section class="subheader" id="subheader">
+  	<h2>Here's some of the work I've done.</h2> 
+  </section>
+  
+<div id="main">
+			<div class="grid">
+				<div class="grid__item" data-size="1280x853">
+					<a href="images/bookmockup1.jpg" class="img-wrap"><img src="images/bookmockup1.jpg" alt="img01" />
+						<div class="description description--grid">Connell McCarthy Magazine</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="958x1280">
+					<a href="images/bookmockup2.jpg" class="img-wrap"><img src="images/bookmockup2.jpg" alt="img02" />
+						<div class="description description--grid">Connell McCarthy Magazine</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="837x1280">
+					<a href="images/bookmockup3.jpg" class="img-wrap"><img src="images/bookmockup3.jpg" alt="img03" />
+						<div class="description description--grid">Connell McCarthy Magazine</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x961">
+					<a href="images/poster1.jpg" class="img-wrap"><img src="images/poster1.jpg" alt="img04" />
+						<div class="description description--grid">Lionhearted Poster</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x1131">
+					<a href="images/poster2.jpg" class="img-wrap"><img src="images/poster2.jpg" alt="img05" />
+						<div class="description description--grid">Earth x Light Poster</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x857">
+					<a href="images/vinal1.jpg" class="img-wrap"><img src="images/vinal1.jpg" alt="img06" />
+						<div class="description description--grid">Back & Forth Vinal</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x1280">
+					<a href="images/vinal2.jpg" class="img-wrap"><img src="images/vinal2.jpg" alt="img07" />
+						<div class="description description--grid">Reach Vinal</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x853">
+					<a href="images/vinal3.jpg" class="img-wrap"><img src="images/vinal3.jpg" alt="img08" />
+						<div class="description description--grid">Thundergun Vinal</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="865x1280">
+					<a href="images/vinal4.jpg" class="img-wrap"><img src="images/vinal4.jpg" alt="img09" />
+						<div class="description description--grid">Emergency Vinal</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x1280">
+					<a href="images/vinal5.jpg" class="img-wrap"><img src="images/vinal5.jpg" alt="img10" />
+						<div class="description description--grid">Hipster Cutthroat Vinal</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="1280x850">
+					<a href="images/tickets.jpg" class="img-wrap"><img src="images/tickets.jpg" alt="img11" />
+						<div class="description description--grid">Ticket Design</div>
+					</a>
+				</div>
+			</div>
+			<!-- /grid -->
+			<div class="preview">
+				<button class="action action--close"><em class="fa fa-times"></em><span class="text-visible">Close</span></button>
+				<div class="description description--preview"></div>
+			</div>
+			<!-- /preview -->
+		</div>
+		<!-- /content -->
+        
+ 
+	</div>
+	<!-- /container -->
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		(function() {
+			var support = { transitions: Modernizr.csstransitions },
+				// transition end event name
+				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+				onEndTransition = function( el, callback ) {
+					var onEndCallbackFn = function( ev ) {
+						if( support.transitions ) {
+							if( ev.target != this ) return;
+							this.removeEventListener( transEndEventName, onEndCallbackFn );
+						}
+						if( callback && typeof callback === 'function' ) { callback.call(this); }
+					};
+					if( support.transitions ) {
+						el.addEventListener( transEndEventName, onEndCallbackFn );
+					}
+					else {
+						onEndCallbackFn();
+					}
+				};
+
+			new GridFx(document.querySelector('.grid'), {
+				imgPosition : {
+					x : 1,
+					y : 0.75
+				},
+				pagemargin : 50,
+				onOpenItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							var delay = Math.floor(Math.random() * 150);
+							el.style.WebkitTransition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							el.style.transition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							
+							el.style.WebkitTransform = 'translate3d(0,400px,0)';
+							el.style.transform = 'translate3d(0,400px,0)';
+							el.style.opacity = 0;
+						}
+					});
+				},
+				onCloseItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							el.style.WebkitTransition = 'opacity .3s, -webkit-transform .3s';
+							el.style.transition = 'opacity .3s, transform .3s';
+
+							el.style.WebkitTransform = 'translate3d(0,0,0)';
+							el.style.transform = 'translate3d(0,0,0)';
+							el.style.opacity = 1;
+
+							onEndTransition(el, function() {
+								el.style.transition = 'none';
+								el.style.WebkitTransform = 'none';
+							});
+						}
+					});
+				}
+			});
+		})();
+	</script>
+  
+<!-- Footer Section -->
+    <div class="footer">
+        <a href="https://www.facebook.com"> <img src="images/face.png" alt="social" height="20px"/> </a>
+        <a href="https://twitter.com/?lang=en"> <img src="images/twit.png" alt="social" height="20px"/> </a>
+        <a href="https://www.instagram.com/?hl=en"> <img src="images/insta.png" alt="social" height="20px"/> </a>
+        <br>
+        &copy;2017 - <strong>Nikolai Bain</strong>
+    </div>
+
+<!-- Main Container Ends -->
+</div>
+</body>
+</html>
