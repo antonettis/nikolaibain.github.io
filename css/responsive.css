@@ -2,21 +2,183 @@
 /* CSS Document */
 
 /* Mobile */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+	
+/* Border */
+#top, #bottom, #left, #right {
+	z-index: 2;
+	background: #ffffff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 35px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
 
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 35px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+.nav {
+	margin-top: 8px;
+}
+.nav img {
+	padding-top: 2px;
+	padding-left: 60px;
+	width: 34px;
+	height: 35px;
+}
+.nav ul {
+	padding-right: 55px;
+	padding-left: 45px;
+}
+.nav li {
+	background-color: #ffffff;
+    float: center;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.nav li a {
+	margin: 0px 0px 0px 0px;
+	font-size: 30px;
+}
+.menu {
+display: none;
+}
+h1 {
+	font-size:6.7vw;
+}
+h2 {
+	margin-top: 2.4vw;
+	padding-bottom: 50px;
+	font-size: 3.2vw;
+}
+
+  .hamburger {
+    cursor: pointer;
+	padding-top: 6.5px;
+	padding-right: 64px;
+    display: block;
+	float: right;
+  }
+  .line {
+    border-bottom: 3px solid #222222;
+    width: 30px;
+    margin-bottom: 8px;
+  }
+  .line:last-child {
+    margin-bottom: 0;
+  }
+	
+.footer {
+	font-size: 8px;
+	line-height: 17px;
+}
+	
 }
 
 /* Small Tablets */
-@media (min-width: 401px)and (max-width: 869px) {
+@media (min-width: 481px) and (max-width: 869px) {
+	
+/* Border */
+#top, #bottom, #left, #right {
+	z-index: 2;
+	background: #ffffff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 40px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
 
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 40px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+.nav {
+	margin-top: 11.6px;
 }
-
+.nav img {
+	padding-top: 2px;
+	padding-left: 60px;
+	width: 36px;
+	height: 38px;
+}
+.nav ul {
+	padding-right: 37px;
+}
+	.nav li a {
+	font-size: 16px;
+}
+h1 {
+	font-size:6.7vw;
+}
+h2 {
+	margin-top: 2.4vw;
+	padding-bottom: 50px;
+	font-size: 3.2vw;
+}
+.footer {
+	font-size: 9px;
+	line-height: 20px;
+}
+	
+}
+	
 /* Small Desktops */
 @media (min-width: 870px) and (max-width: 1200px) {
+	
+/* Border */
+#top, #bottom, #left, #right {
+	z-index: 2;
+	background: #ffffff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 50px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
 
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 50px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+.nav {
+	margin-top: 20px;
 }
-
-/* Large Desktops */
-@media (min-width: 1200px) {
+.nav img {
+	padding-left: 70px;
+}
+.nav ul {
+	padding-right: 45px;
+}
+	
+h1 {
+	font-size:4.8vw;
+}
+h2 {
+	margin-top: 2.4vw;
+	padding-bottom: 50px;
+	font-size: 2.3vw;
+}
+	
+.footer {
+	line-height: 29px;
+}
 	
 }
