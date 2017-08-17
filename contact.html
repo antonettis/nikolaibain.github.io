@@ -1,231 +1,95 @@
-@charset "UTF-8";
+<!doctype html>
+<html lang="en-US">
 
-/* Body */
-body {
-	font-family: Montserrat;
-	text-align: center;
-	color: #222222;
-	background-color: #e4ffff;
-	background-size: 100%;
-}
+<!-- Head -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Nikolai Bain Design</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+    </head>
 
-/* Container */
-.container {
-	width: 100%;
-}
+<!-- Body Starts -->
+<body>
+	<div class="container">
 
-/* Border */
-#top, #bottom, #left, #right {
-	z-index: 2;
-	background: #ffffff;
-	}
-	#left, #right {
-		top: 0;
-		bottom: 0;
-		width: 60px;
-		position: fixed;
-	}
-	#left { 
-		left: 0; 
-	}
-	#right { 
-		right: 0; 
-	}
-	#top {
-		top: 0;
-		height: 60px;
-		margin-top: -8px;
-		}
+<!-- Border -->
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
 
+<!-- Navigation -->
+ <!-- Navigation -->
+    <header class="nav">
+      <a href="index.html"><img src="images/logo.png" width="auto" height="40px" alt="logo"></a>
+       <div href="#" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+        <ul class="menu">
+           <li><a href="contact.html"><u>Contact</u></a></li>
+           <li><a href="https://society6.com/nikolaibain/prints">Prints</a></li>
+            <li><a href="https://www.behance.net/nikolaibain">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </header>
 
-/* Navigation */
-.nav {
-    position: absolute;
-	z-index: 3;
-	width: 98%;
-	margin-top: -20px;
-}
-.nav img {
-	float: left;
-	padding-left: 82px;
-}
-.nav ul {
-	padding-right: 50px;
-  	margin: 0;
-}
-.nav li {
-   display: inline;
-   float: right;
-	padding-top: 10px;
-}
-.nav li a {
-	margin: 0px 4vw 0px 0vw;
-	text-decoration: none;
-	font-size: 18px;
-	letter-spacing: 2px;
-}
-a:link {
-    color: #4A4A4A;
-	font-weight: 500;
-}
-a:visited {
-	color: #4A4A4A;
-}
-a:hover {
-	font-weight: 500;
-    color: #222222;
-}
-a:active {
-}
-/* Main Section */
-.main {
-	display: -webkit-flex;
-    display: flex;
-	height: 1000px;
-	width: 80vw;
-}
-.main2 {
-	height: 1000px;
-	display:inline-block;
-	width: 80vw;
-	margin-top: 100px;
-}
-.flexbox {
-	display:inline-block;
-	width: 50%;
-	margin-top: 100px;
-}
-h1 {
-	font-weight: 500;
-	font-size:4vw;
-	line-height: 115%;
-	margin-bottom: 50px;
-}
-h2 {
-	padding-bottom: 30px;
-	font-weight: 500;
-	font-size: 28px;
-	letter-spacing: 0.3vw;
-}
-p {
-	font-weight: 300;
-	font-size: 15px;
-}
-.button {
-	width: 300px;
-	margin-right: auto;
-	margin-top: 1vw;
-	margin-left: auto;
-	padding-top: 15px;
-	padding-right: 7px;
-	padding-bottom: 15px;
-	padding-left: 7px;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: 0px;
-	text-transform: uppercase;
-	font-size: 15px;
-	letter-spacing: 0.4vw;
-	border: 3px solid #222222;
-	color: #222222;
-	transition: all 0.3s linear;
-	position:fixed !important;
-	position:absolute;
-	right:0;
-	top:70%;
-	left:0;
-}
-.button:hover {
-	background-color: #222222;
-	color: #e4ffff;
-}
+<!-- Main Section -->
+    <section class="main2" id="main2">
+            <h2>Lets get together and throw around ideas.</h2>
+       <section id="main-contact">
+   <div class="cont">
+                <!-- Form Area -->
+                <div class="contact-form">
+                    <!-- Form -->
+                    <form id="contact-us" method="post" action="#">
+                        <!-- Left Inputs -->
+                        <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                            <!-- Name -->
+                            <input type="text" name="name" id="name" required="required" class="form" placeholder="Name*" />
+                            <!-- Email -->
+                            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email*" />
+                            <!-- Subject -->
+                            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject*" />
+                        </div><!-- End Left Inputs -->
+                        <!-- Right Inputs -->
+                        <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                            <!-- Message -->
+                            <textarea name="message" id="message" class="form textarea"  placeholder="Message*"></textarea>
+                        </div><!-- End Right Inputs -->
+                        <!-- Bottom Submit -->
+                        <div class="relative fullwidth col-xs-12">
+                            <!-- Send Button -->
+                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button> 
+                        </div><!-- End Bottom Submit -->
+                        <!-- Clear -->
+                        <div class="clear"></div>
+                    </form>
 
-#main-contact {
-	background-color: #e4ffff;
-	min-height: 560px;
-	padding-left: 16%;
-	padding-right: 10%;
-	display: flex;
-}
+                    <!-- Your Mail Message -->
+                    <div class="mail-message-area">
+                        <!-- Message -->
+                        <div class="alert gray-bg mail-message not-visible-message">
+                            <strong>Thank You !</strong> Your email has been delivered.
+                        </div>
+                        
+                    </div>
 
-.full {
-	display: flex;
-}
-.cont {
-	flex: 1;
-  	padding-bottom: 1.5em;
-  	padding-right: 7em;
-	padding-left: 2.5em;
-}
+                </div><!-- End Contact Form Area -->
+            </div>
+ 	</section>
+   <h2><a href="https://www.instagram.com/nikolai_does_design/">Instagram.</a><br><a href="https://www.linkedin.com/in/nikolai-bain-45840a140/">LinkedIn.</a><br><a href="https://www.behance.net/nikolaibaid9ee">Behance.</a></h2> 
+    </section>
 
-/* Contact Form Section */
-.mail-message{
-    background: #ffffff !important;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    transition: all 0.7s;
-    margin:0 auto;
-    border-radius: 0;
-}
-  .not-visible-message{
-    height:0px;
-    opacity: 0;
-  }
-  .visible-message{
-    height:auto;
-    opacity: 1;
-    margin:25px auto 0;
-  }
-  .form{
-    width: 100%;
-    padding: 15px;
-    background:#ffffff;
-    border:1px solid rgba(0, 0, 0, 0.075);
-    margin-bottom:25px;
-    color:#727272 !important;
-	font-family: Montserrat;
-    font-size:13px;
-  }
-  .form:hover{
-    border:1px solid #222222;
-  }
-  .form:focus{
-    border:1px solid #222222;
-  }
-  .textarea{
-    height: 200px;
-    max-height: 200px;
-    max-width: 100%;
-  }
-  .form-btn{
-	align: center;
-    padding:15px;
-    color:#222222;
-    background: #e4ffff;
-	font-family: Montserrat;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 2px;
-	border: 4px solid #222222;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-	margin-bottom: 30px;
-  }
-  .form-btn:hover{
-    background:#222222;
-    color: #e4ffff;
-  }
-/* Footer Banner */
-.footer {
-	z-index: 5;
-	height: 20px;
-	text-align: center;
-	line-height: 25px;
-    width:100%;
-	color: #222222;
-	background-color: ffffff;
-	font-size: 8px;
-	letter-spacing: 1px;
-	bottom:0;
-}
+<!-- Footer Section -->
+    <div class="footer">
+        &copy;2017 - <strong>Nikolai Bain</strong>
+    </div>
+
+<!-- Main Container Ends -->
+		</div>
+	</body>
+</html>
