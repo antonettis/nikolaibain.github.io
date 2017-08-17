@@ -2,29 +2,33 @@
 /* CSS Document */
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 600px) and (min-width: 10px){
 	
 /* Border */
 #top, #bottom, #left, #right {
 	z-index: 2;
 	background: #ffffff;
-	position: fixed;
 	}
 	#left, #right {
-		top: 0; bottom: 0;
+		top: 0;
+		bottom: 0;
 		width: 35px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-
-	#top, #bottom {
-		left: 0; right: 0;
+		position: fixed;
+	}
+	#left { 
+		left: 0; 
+	}
+	#right { 
+		right: 0; 
+	}
+	#top {
+		top: 0;
 		height: 35px;
+		margin-top: -8px;
 		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
+	
 .nav {
-	margin-top: 8px;
+	margin-top: -19px;
 }
 .nav img {
 	padding-top: 2px;
@@ -51,12 +55,13 @@
 display: none;
 }
 h1 {
-	font-size:6.7vw;
+	font-size:9vw;
+	margin-top: 30px;
+	margin-bottom: ;
 }
 h2 {
-	margin-top: 2.4vw;
 	padding-bottom: 50px;
-	font-size: 3.2vw;
+	font-size: 4vw;
 }
 
   .hamburger {
@@ -75,6 +80,29 @@ h2 {
     margin-bottom: 0;
   }
 	
+.button {
+	width: 140px;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-left: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 4px;
+	border: 3px solid #222222;
+	color: #222222;
+	transition: all 0.3s linear;
+	position:absolute;
+	right:0;
+	left:0;
+}
+	
 .footer {
 	font-size: 8px;
 	line-height: 17px;
@@ -83,30 +111,33 @@ h2 {
 }
 
 /* Small Tablets */
-@media (min-width: 481px) and (max-width: 869px) {
+@media (min-width: 601px) and (max-width: 869px) {
 	
 /* Border */
 #top, #bottom, #left, #right {
 	z-index: 2;
 	background: #ffffff;
-	position: fixed;
 	}
 	#left, #right {
-		top: 0; bottom: 0;
+		top: 0;
+		bottom: 0;
 		width: 40px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-
-	#top, #bottom {
-		left: 0; right: 0;
+		position: fixed;
+	}
+	#left { 
+		left: 0; 
+	}
+	#right { 
+		right: 0; 
+	}
+	#top {
+		top: 0;
 		height: 40px;
+		margin-top: -8px;
 		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
 
 .nav {
-	margin-top: 11.6px;
+	margin-top: -21px;
 }
 .nav img {
 	padding-top: 2px;
@@ -124,7 +155,6 @@ h1 {
 	font-size:6.7vw;
 }
 h2 {
-	margin-top: 2.4vw;
 	padding-bottom: 50px;
 	font-size: 3.2vw;
 }
@@ -142,24 +172,27 @@ h2 {
 #top, #bottom, #left, #right {
 	z-index: 2;
 	background: #ffffff;
-	position: fixed;
 	}
 	#left, #right {
-		top: 0; bottom: 0;
+		top: 0;
+		bottom: 0;
 		width: 50px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-
-	#top, #bottom {
-		left: 0; right: 0;
+		position: fixed;
+	}
+	#left { 
+		left: 0; 
+	}
+	#right { 
+		right: 0; 
+	}
+	#top {
+		top: 0;
 		height: 50px;
+		margin-top: -8px;
 		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
 
 .nav {
-	margin-top: 20px;
+	margin-top: -22px;
 }
 .nav img {
 	padding-left: 70px;
@@ -172,7 +205,6 @@ h1 {
 	font-size:4.8vw;
 }
 h2 {
-	margin-top: 2.4vw;
 	padding-bottom: 50px;
 	font-size: 2.3vw;
 }
