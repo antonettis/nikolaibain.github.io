@@ -7,7 +7,9 @@ body {
 	color: #222222;
 	background-color: #e4ffff;
 	background-size: 100%;
+	overflow-x: hidden
 }
+
 
 /* Container */
 .container {
@@ -81,13 +83,7 @@ a:active {
 }
 /* Main Section */
 .main {
-	display: -webkit-flex;
-    display: flex;
-	height: 1000px;
-	width: 80vw;
-}
-.main2 {
-	height: 1000px;
+	height: 400px;
 	display:inline-block;
 	width: 80vw;
 	margin-top: 70px;
@@ -152,11 +148,9 @@ p {
 
 /*  COLUMN SETUP  */
 .col {
-	display:inline-block;
-	background-color: #ffffff;
+	display: inline-block;
 	margin: 1% 2% 1% 2%;
 }
-.col:first-child { margin-left: 0; }
 
 /*  GROUPING  */
 .group:before,
@@ -164,7 +158,17 @@ p {
 .group:after { clear:both;}
 .group { zoom:1; /* For IE 6/7 */ }
 /*  GRID OF THREE  */
-.span_1_of_3 { width: 29%; }
+.span_1_of_3 { 
+	width: 29%; 
+}
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 20%;
+}
+
+.span_1_of_2 {
+	width: 39.2%;
+}
 
 #main-contact {
 	background-color: #e4ffff;
