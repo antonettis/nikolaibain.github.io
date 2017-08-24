@@ -2,7 +2,7 @@
 /* CSS Document */
 
 /* Mobile */
-@media (max-width: 600px) and (min-width: 10px){
+@media screen and (max-width: 700px) and (min-width: 10px){
 	
 /* Border */
 #top, #bottom, #left, #right {
@@ -12,7 +12,7 @@
 	#left, #right {
 		top: 0;
 		bottom: 0;
-		width: 35px;
+		width: 20px;
 		position: fixed;
 	}
 	#left { 
@@ -23,18 +23,20 @@
 	}
 	#top {
 		top: 0;
-		height: 35px;
+		height: 28px;
 		margin-top: -8px;
 		}
-	
+	#bottom {
+		height: 20px;
+	}
 .nav {
-	margin-top: 0px;
+	margin-top: -7px;
 }
 .nav img {
-	padding-top: 2px;
-	padding-left: 60px;
-	width: 34px;
-	height: 35px;
+	padding-top: 8px;
+	padding-left: 30px;
+	width: auto;
+	height: 30px;
 }
 .nav ul {
 	padding-right: 55px;
@@ -52,12 +54,11 @@
 	font-size: 30px;
 }
 .menu {
-display: none;
+	display: none;
 }
 h1 {
 	font-size:9vw;
 	margin-top: 30px;
-	margin-bottom: ;
 }
 h2 {
 	margin-top: 2.4vw;
@@ -65,17 +66,17 @@ h2 {
 	font-size: 4vw;
 }
 
-  .hamburger {
+ .hamburger {
     cursor: pointer;
-	padding-top: 6.5px;
-	padding-right: 64px;
+	padding-top: 10px;
+	padding-right: 35px;
     display: block;
 	float: right;
   }
   .line {
     border-bottom: 3px solid #222222;
-    width: 30px;
-    margin-bottom: 8px;
+    width: 28px;
+    margin-bottom: 7px;
   }
   .line:last-child {
     margin-bottom: 0;
@@ -105,14 +106,14 @@ h2 {
 }
 	
 .footer {
-	font-size: 8px;
-	line-height: 17px;
+	font-size: 6px;
+	line-height: 6px;
 }
 	
 }
 
 /* Small Tablets */
-@media (min-width: 601px) and (max-width: 869px) {
+@media (min-width: 701px) and (max-width: 869px) {
 	
 /* Border */
 #top, #bottom, #left, #right {
@@ -132,9 +133,11 @@ h2 {
 		right: 0; 
 	}
 	#top {
-		top: 0;
-		height: 40px;
+		height: 42px;
 		margin-top: -8px;
+		}
+	#bottom {
+		height: 37px;
 		}
 
 .nav {
