@@ -12,7 +12,7 @@
 	#left, #right {
 		top: 0;
 		bottom: 0;
-		width: 35px;
+		width: 20px;
 		position: fixed;
 	}
 	#left { 
@@ -23,18 +23,21 @@
 	}
 	#top {
 		top: 0;
-		height: 35px;
+		height: 20px;
 		margin-top: -8px;
 		}
-	
+.main2 {
+	width: 80vw;
+	margin-top: 40px;
+	}
 .nav {
 	margin-top: -19px;
 }
 .nav img {
-	padding-top: 2px;
-	padding-left: 60px;
-	width: 34px;
-	height: 35px;
+	padding-top: 8px;
+	padding-left: 30px;
+	width: auto;
+	height: 30px;
 }
 .nav ul {
 	padding-right: 55px;
@@ -59,21 +62,21 @@ h1 {
 	margin-top: 30px;
 }
 h2 {
-	padding-bottom: 50px;
-	font-size: 4vw;
+	padding-bottom: 40px;
+	font-size: 6vw;
 }
 
   .hamburger {
     cursor: pointer;
-	padding-top: 6.5px;
-	padding-right: 64px;
+	padding-top: 10px;
+	padding-right: 35px;
     display: block;
 	float: right;
   }
   .line {
     border-bottom: 3px solid #222222;
-    width: 30px;
-    margin-bottom: 8px;
+    width: 28px;
+    margin-bottom: 7px;
   }
   .line:last-child {
     margin-bottom: 0;
@@ -112,6 +115,7 @@ h2 {
 }
 	
 .footer {
+	height: 20px;
 	font-size: 8px;
 	line-height: 17px;
 }
