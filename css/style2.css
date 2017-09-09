@@ -17,36 +17,62 @@ body {
 	margin-bottom: 0px;
 }
 
+/* Border */
+#top, #bottom, #left, #right {
+	z-index: 2;
+	background: #ffffff;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 60px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 60px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+
 /* Navigation */
-.logo {
-	float: left;
-	padding-left: 15%;
-}
 .nav {
-  	position: absolute;
-	z-index: 1;
+  position: absolute;
+	z-index: 3;
 	width: 100%;
-	padding-top: 40px;
-	padding-bottom: 5px;
+	top: 25px;
 }
 .nav ul {
   margin: 0;
-  padding-right: 15%;
 }
 .nav li {
    display: inline;
-   float: right;
+   float: center;
 }
 .nav li a {
-	padding: 40px 20px;
+	margin: 0px 8vw 0px 2vw;
 	text-decoration: none;
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 600;
+	font-size: 22px;
 	letter-spacing: 2px;
 }
 .menu-btn {
 	visibility:hidden;
+}
+a:link {
+    color: #222222;
+	font-weight: 300;
+}
+a:visited {
+	color: #222222;
+}
+a:hover {
+	font-weight: 600;
+    color: #222222;
+}
+a:active {
 }
 
 /* Header Section */
