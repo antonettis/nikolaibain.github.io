@@ -30,33 +30,7 @@
 	width: 80vw;
 	margin-top: 40px;
 	}
-.nav {
-	margin-top: -19px;
-}
-.nav img {
-	padding-top: 8px;
-	padding-left: 30px;
-	width: auto;
-	height: 30px;
-}
-.nav ul {
-	padding-right: 55px;
-	padding-left: 45px;
-}
-.nav li {
-	background-color: #ffffff;
-    float: center;
-	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-.nav li a {
-	margin: 0px 0px 0px 0px;
-	font-size: 30px;
-}
-.menu {
-display: none;
-}
+
 h1 {
 	font-size:9vw;
 	margin-top: 30px;
@@ -147,21 +121,6 @@ h2 {
 		margin-top: -8px;
 		}
 
-.nav {
-	margin-top: -21px;
-}
-.nav img {
-	padding-top: 2px;
-	padding-left: 60px;
-	width: 36px;
-	height: 38px;
-}
-.nav ul {
-	padding-right: 37px;
-}
-	.nav li a {
-	font-size: 16px;
-}
 h1 {
 	font-size:6.7vw;
 }
@@ -202,16 +161,6 @@ h2 {
 		height: 50px;
 		margin-top: -8px;
 		}
-
-.nav {
-	margin-top: -22px;
-}
-.nav img {
-	padding-left: 70px;
-}
-.nav ul {
-	padding-right: 45px;
-}
 	
 h1 {
 	font-size:4.8vw;
@@ -225,4 +174,29 @@ h2 {
 	line-height: 29px;
 }
 	
+}
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+	
+	.header {
+		background: transparent;
+	}
+  .header li {
+    float: left;
+
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
 }
